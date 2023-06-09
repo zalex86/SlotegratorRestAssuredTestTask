@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "isReport": {
+          "type": "null"
+        },
+        "comment": {
+          "type": "null"
+        },
+        "createBy": {
+          "type": "string"
+        },
+        "report": {
+          "type": "null"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "feedback": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "email",
+        "name",
+        "surname",
+        "role",
+        "position",
+        "status",
+        "isReport",
+        "comment",
+        "createBy",
+        "report",
+        "updated_at",
+        "created_at",
+        "feedback"
+      ]
+    },
+    "accessToken": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user",
+    "accessToken"
+  ]
+}

@@ -4,14 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1845056-7b60-4326-814b-9d8e63263213" name="Changes" comment="" />
+    <list default="true" id="f1845056-7b60-4326-814b-9d8e63263213" name="Changes" comment="Added all tests.">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/RestRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/requests/AuthRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/requests/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/requests/PlayerRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/requests/PlayerBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/PlayerOneRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/PlayerRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/UserLoginRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/UserRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/UserSecondRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/BaseSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/authorization/tester/PostLoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/DeleteOneTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetAllTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetOneTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/PostCreateTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PlayerGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/loginNew.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/player.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/playerGetAll.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/playerOne.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QpLGKyxBK15l3hMCJIDRj3gArA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,12 +66,142 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/AleksanDR/IdeaProjects/YT/testslotegrator/src/test/resources/jsonSchemas&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.slotegrator.tests.rest.player.testerAuth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\AleksanDR\IdeaProjects\YT\testslotegrator\src\test\resources\jsonSchemas" />
+      <recent name="D:\Users\AleksanDR\IdeaProjects\YT\testslotegrator\src\main\java\com\slotegrator\tests\rest\player\requests" />
+      <recent name="D:\Users\AleksanDR\IdeaProjects\YT\testslotegrator\src\main\java\com\slotegrator\tests\rest\player\listeners\loggers" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.slotegrator.tests.rest" />
+      <recent name="com.slotegrator.tests.rest.player" />
+      <recent name="com.slotegrator.tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.slotegrator.tests.rest.players.automationTask" />
+      <recent name="com.slotegrator.tests.rest.player.automationTask" />
+      <recent name="com.slotegrator.tests.rest.player.requests" />
+      <recent name="com.slotegrator.tests.rest.player.api" />
+      <recent name="com.slotegrator.tests.rest.player.listeners" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.DeleteOneTests.deleteAllPlayers">
+    <configuration name="DeleteOneTests.deleteAllPlayers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testslotegrator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slotegrator.tests.rest.players.automationTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slotegrator.tests.rest.players.automationTask" />
+      <option name="MAIN_CLASS_NAME" value="com.slotegrator.tests.rest.players.automationTask.DeleteOneTests" />
+      <option name="METHOD_NAME" value="deleteAllPlayers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetAllTests.getAllPlayers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testslotegrator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slotegrator.tests.rest.players.automationTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slotegrator.tests.rest.players.automationTask" />
+      <option name="MAIN_CLASS_NAME" value="com.slotegrator.tests.rest.players.automationTask.GetAllTests" />
+      <option name="METHOD_NAME" value="getAllPlayers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetAllTests.getOnePlayer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testslotegrator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slotegrator.tests.rest.players.automationTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slotegrator.tests.rest.players.automationTask" />
+      <option name="MAIN_CLASS_NAME" value="com.slotegrator.tests.rest.players.automationTask.GetAllTests" />
+      <option name="METHOD_NAME" value="getOnePlayer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOneTests.getOnePlayer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testslotegrator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slotegrator.tests.rest.players.automationTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slotegrator.tests.rest.players.automationTask" />
+      <option name="MAIN_CLASS_NAME" value="com.slotegrator.tests.rest.players.automationTask.GetOneTests" />
+      <option name="METHOD_NAME" value="getOnePlayer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostCreateTests.authByUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testslotegrator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slotegrator.tests.rest.players.automationTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slotegrator.tests.rest.player.automationTask" />
+      <option name="MAIN_CLASS_NAME" value="com.slotegrator.tests.rest.players.automationTask.PostCreateTests" />
+      <option name="METHOD_NAME" value="authByUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.DeleteOneTests.deleteAllPlayers" />
+        <item itemvalue="TestNG.GetAllTests.getAllPlayers" />
+        <item itemvalue="TestNG.GetOneTests.getOnePlayer" />
+        <item itemvalue="TestNG.GetAllTests.getOnePlayer" />
+        <item itemvalue="TestNG.PostCreateTests.authByUser" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,6 +211,43 @@
       <option name="presentableId" value="Default" />
       <updated>1686045481902</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1686045612529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686045612529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Added all tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all tests." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
