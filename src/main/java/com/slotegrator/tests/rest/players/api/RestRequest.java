@@ -2,10 +2,12 @@ package com.slotegrator.tests.rest.players.api;
 
 
 import com.slotegrator.tests.rest.players.api.requests.Credentials;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.config.HttpClientConfig;
 import io.restassured.config.RestAssuredConfig;
+import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -24,7 +26,7 @@ import static org.apache.http.params.CoreConnectionPNames.SO_TIMEOUT;
 public class RestRequest {
 
     protected static final Logger log = LoggerFactory.getLogger(RestRequest.class);
-    protected String host;
+    //protected String HOST;
     protected Credentials credentials;
     private final RestAssuredConfig config = RestAssured.config()
             .httpClient(HttpClientConfig.httpClientConfig()
@@ -33,9 +35,10 @@ public class RestRequest {
 
     private static final ConcurrentMap<String, String> tokenMap = new ConcurrentHashMap<>();
     protected final String TESTER_LOGIN = "tester/login";
+    public static final String HOST = System.getProperty("host") + "api/";
 
     public RestRequest(Credentials credentials) {
-        host = "https://testslotegrator.com/api/";
+
         this.credentials = credentials;
     }
 
@@ -48,13 +51,14 @@ public class RestRequest {
     private String getToken() {
         String token = tokenMap.get(credentials.getEmail());
         if (token == null) {
-            token = givenWithRequestSpecBuilder(host + TESTER_LOGIN)
+            token = givenWithRequestSpecBuilder(HOST + TESTER_LOGIN)
                     .when()
                     .body(new User()
                             .setEmail(credentials.getEmail())
                             .setPassword(credentials.getPassword()))
                     .post()
-                    .then().log().all()
+                    .then()
+                    .log().all()
                     .statusCode(SC_CREATED)
                     .extract().body().jsonPath().getString("accessToken");
             tokenMap.putIfAbsent(credentials.getEmail(), token);
@@ -67,10 +71,14 @@ public class RestRequest {
         return given().spec(new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON.withCharset("UTF-8"))
-                .setConfig(config).build()).request().log().all();
+                .setConfig(config)
+                .log(LogDetail.ALL)
+                .addFilter(new AllureRestAssured()).build());//.request().log().all();
     }
 
     protected Response logResponse(Response response) {
-        return response.then().log().all().extract().response();
+        return response.then()
+                .log().all()
+                .extract().response();
     }
 }

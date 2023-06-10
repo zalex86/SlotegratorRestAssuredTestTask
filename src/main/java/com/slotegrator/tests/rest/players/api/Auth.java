@@ -13,7 +13,7 @@ public class Auth extends RestRequest {
     @Step("POST /api/auth/authenticate")
     public Response postAuthenticate(User authenticateUser){
         String AUTH_LOGIN = "tester/login";
-        return logResponse(givenWithRequestSpecBuilder(host + AUTH_LOGIN)
+        return logResponse(givenWithRequestSpecBuilder(HOST + AUTH_LOGIN)
                 .body(authenticateUser)
                 .post());
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" configfailurepolicy="continue" parallel="tests" thread-count="1">
+
+    <test name="Tester">
+        <classes>
+            <class name="com.slotegrator.tests.rest.authorization.tester.PostLoginTests"/>
+        </classes>
+    </test>
+    <test name="Player">
+        <classes>
+            <class name="com.slotegrator.tests.rest.players.automationTask.PostCreateTests"/>
+            <class name="com.slotegrator.tests.rest.players.automationTask.GetOneTests"/>
+            <class name="com.slotegrator.tests.rest.players.automationTask.GetAllTests"/>
+            <class name="com.slotegrator.tests.rest.players.automationTask.DeleteOneTests"/>
+        </classes>
+    </test>
+
+</suite>

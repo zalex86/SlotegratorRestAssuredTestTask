@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PlayerOneRp {
-	private String id;
+	private Integer id;
 	private String surname;
 	private String name;
 	@JsonProperty("currency_code")

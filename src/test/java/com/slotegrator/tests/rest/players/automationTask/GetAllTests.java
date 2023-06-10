@@ -4,6 +4,9 @@ import com.slotegrator.tests.rest.BaseSetup;
 import com.slotegrator.tests.rest.players.api.requests.PlayerRq;
 import com.slotegrator.tests.rest.players.data.responses.PlayerOneRp;
 import com.slotegrator.tests.rest.players.data.responses.PlayerRp;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import jdk.jfr.Description;
 import org.assertj.core.api.Assertions;
@@ -18,6 +21,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static utils.PlayerGenerator.getRandomPlayer;
 import static utils.TestUtils.verifyCode;
 
+@Feature("Players")
+@Story("GET /api/automationTask/getAll")
 public class GetAllTests extends BaseSetup {
 
     @BeforeClass
@@ -27,7 +32,7 @@ public class GetAllTests extends BaseSetup {
         PlayerRq.getInstance().postPlayerCreate(getRandomPlayer()).as(PlayerRp.class);
     }
 
-    @Description("POST /api/automationTask/getOne")
+    @Description("GET /api/automationTask/getAll")
     @Test(description = "Successful getting all players")
     public void getAllPlayers() {
         PlayerRq.getInstance().init(credentialsMap.get(ROLE_TESTER));
@@ -37,6 +42,18 @@ public class GetAllTests extends BaseSetup {
         assertThat("Json Scheme validation", response.asString(),
                 matchesJsonSchemaInClasspath("jsonSchemas/playerGetAll.json"));
         Assertions.assertThat(rp.size()).isGreaterThan(2);
+    }
 
+    @Epic("Expected bugs")
+    @Description("GET /api/automationTask/getAll")
+    @Test(description = "Successful getting all players (As Documented)")
+    public void getAllPlayersOld() {
+        PlayerRq.getInstance().init(credentialsMap.get(ROLE_TESTER));
+        Response response = verifyCode(PlayerRq.getInstance()
+                .getAllPlayers(), 200);
+        List<PlayerOneRp> rp = Arrays.asList(response.as(PlayerOneRp[].class));
+        assertThat("Json Scheme validation", response.asString(),
+                matchesJsonSchemaInClasspath("jsonSchemas/deleteOne.json"));
+        Assertions.assertThat(rp.size()).isGreaterThan(2);
     }
 }

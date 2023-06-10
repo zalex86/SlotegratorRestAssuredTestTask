@@ -18,7 +18,7 @@ public class Player extends RestRequest {
 
     @Step("Create a user POST /api/automationTask/create")
     public Response postPlayerCreate(PlayerBody playerBody) {
-        return logResponse(givenWithAuth(host + CREATE)
+        return logResponse(givenWithAuth(HOST + CREATE)
                 .when()
                 .body(playerBody)
                 .post());
@@ -26,21 +26,21 @@ public class Player extends RestRequest {
 
     @Step("Get one player POST /api/automationTask/getOne")
     public Response postGetOnePlayer(PlayerBody playerEmail) {
-        return logResponse(givenWithAuth(host + GET_ONE)
+        return logResponse(givenWithAuth(HOST + GET_ONE)
                 .when().body(playerEmail)
                 .post());
     }
 
     @Step("Get all players GET /api/automationTask/getAll")
     public Response getAllPlayers() {
-        return logResponse(givenWithAuth(host + GET_ALL)
+        return logResponse(givenWithAuth(HOST + GET_ALL)
                 .when()
                 .get());
     }
 
     @Step("Delete one player DELETE /api/automationTask/deleteOne/{0}")
     public Response deleteOnePlayer(int id) {
-        return logResponse(givenWithAuth(host + DELETE_ONE)
+        return logResponse(givenWithAuth(HOST + DELETE_ONE)
                 .when().body(id)
                 .delete());
     }
