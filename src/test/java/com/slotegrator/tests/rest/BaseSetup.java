@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeSuite;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-public class BaseSetup {
+public abstract class BaseSetup {
     protected static final ConcurrentMap<String, Credentials> credentialsMap = new ConcurrentHashMap<>();
     public static final String ROLE_TESTER = "ROLE_TESTER";
     public final String TESTER_LOGIN = System.getProperty("testerLogin");

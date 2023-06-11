@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1845056-7b60-4326-814b-9d8e63263213" name="Changes" comment="Added all tests.">
-      <change afterPath="$PROJECT_DIR$/configuration/basic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration/test_run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchemas/deleteOne.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/BaseGetDeleteSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/RestRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/api/RestRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/PlayerOneRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/PlayerOneRp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/UserSecondRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slotegrator/tests/rest/players/data/responses/UserDocumentedRp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/BaseSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/BaseSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/authorization/tester/PostLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/authorization/tester/PostLoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/DeleteOneTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/DeleteOneTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetAllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetAllTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetOneTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/GetOneTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/PostCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/slotegrator/tests/rest/players/automationTask/PostCreateTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Users/AleksanDR/IdeaProjects/YT/testslotegrator/configuration"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/AleksanDR/IdeaProjects/YT/testslotegrator/configuration&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.slotegrator.tests.rest.player.testerAuth" />
